@@ -1,0 +1,12 @@
+name: 'YAML Edit'
+description: 'Edit a YAML file'
+author: 'Dylan Bono'
+
+inputs:
+  file:
+    description: 'YAML File'
+    required: true
+
+runs:
+  using: 'node12',
+  main: 'dist/index.js'
