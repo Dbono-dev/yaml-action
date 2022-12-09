@@ -1,5 +1,6 @@
 const core = require('@actions/core');
 const fs = require('fs');
+const path = require('path');
 // const yaml = require('yaml');
 
 async function run() {
