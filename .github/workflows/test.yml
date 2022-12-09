@@ -1,8 +1,7 @@
 name: Test
 
 on:
-  pull_request:
-    types: [opened]
+  workflow_dispatch:
 
 jobs:
   test:
@@ -11,4 +10,4 @@ jobs:
       - uses: actions/checkout@v2
       - uses: ./
         with:
-          file: 'test.yaml'
+          file: "./test.yaml"
