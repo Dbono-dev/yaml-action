@@ -5289,8 +5289,8 @@ __webpack_unused_export__ = lineCounter.LineCounter;
 __webpack_unused_export__ = parser.Parser;
 __webpack_unused_export__ = publicApi.parse;
 __webpack_unused_export__ = publicApi.parseAllDocuments;
-exports.wL = publicApi.parseDocument;
-exports.Pz = publicApi.stringify;
+__webpack_unused_export__ = publicApi.parseDocument;
+__webpack_unused_export__ = publicApi.stringify;
 __webpack_unused_export__ = visit.visit;
 __webpack_unused_export__ = visit.visitAsync;
 
@@ -11018,17 +11018,19 @@ var __webpack_exports__ = {};
 
 
 
-const yaml_file = _actions_core__WEBPACK_IMPORTED_MODULE_2__.getInput('file')
+console.log("Hello World")
 
-const filePath = path__WEBPACK_IMPORTED_MODULE_3__.join(process.cwd(), yaml_file)
+// const yaml_file = core.getInput('file')
 
-const file = fs__WEBPACK_IMPORTED_MODULE_1__.readFileSync(filePath, 'utf8')
-const pubspecDoc = yaml__WEBPACK_IMPORTED_MODULE_0__/* .parseDocument */ .wL(file, {schema: "core"})
+// const filePath = path.join(process.cwd(), yaml_file)
 
-pubspecDoc.set('version', 'test')
+// const file = fs.readFileSync(filePath, 'utf8')
+// const pubspecDoc = YAML.parseDocument(file, {schema: "core"})
 
-const finalDoc = yaml__WEBPACK_IMPORTED_MODULE_0__/* .stringify */ .Pz(pubspecDoc)
+// pubspecDoc.set('version', 'test')
 
-fs__WEBPACK_IMPORTED_MODULE_1__.writeFileSync(filePath, finalDoc)
+// const finalDoc = YAML.stringify(pubspecDoc)
+
+// fs.writeFileSync(filePath, finalDoc)
 })();
 

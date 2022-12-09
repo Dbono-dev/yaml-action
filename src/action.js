@@ -3,15 +3,17 @@ import fs from 'fs'
 import * as core from '@actions/core'
 import path from 'path'
 
-const yaml_file = core.getInput('file')
+console.log("Hello World")
 
-const filePath = path.join(process.cwd(), yaml_file)
+// const yaml_file = core.getInput('file')
 
-const file = fs.readFileSync(filePath, 'utf8')
-const pubspecDoc = YAML.parseDocument(file, {schema: "core"})
+// const filePath = path.join(process.cwd(), yaml_file)
 
-pubspecDoc.set('version', 'test')
+// const file = fs.readFileSync(filePath, 'utf8')
+// const pubspecDoc = YAML.parseDocument(file, {schema: "core"})
 
-const finalDoc = YAML.stringify(pubspecDoc)
+// pubspecDoc.set('version', 'test')
 
-fs.writeFileSync(filePath, finalDoc)
+// const finalDoc = YAML.stringify(pubspecDoc)
+
+// fs.writeFileSync(filePath, finalDoc)
