@@ -2,6 +2,11 @@ name: 'Hello World'
 description: 'Saying hello to the world'
 author: 'Dylan Bono'
 
+inputs:
+  version:
+    description: 'Version Number'
+    required: true
+
 runs:
   using: 'node12'
   main: 'dist/index.js'

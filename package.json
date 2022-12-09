@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/Dbono-dev/yaml-action#readme",
   "devDependencies": {
+    "@actions/core": "^1.10.0",
+    "fs": "^0.0.1-security",
     "yaml": "^2.1.3"
   },
   "dependencies": {
