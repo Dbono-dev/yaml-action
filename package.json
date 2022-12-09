@@ -2,10 +2,11 @@
   "name": "yaml-action",
   "version": "1.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "bump": "npm version"
+    "bump": "npm version",
+    "build": "ncc build src/action.js -o dist"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/Dbono-dev/yaml-action/issues"
   },
-  "homepage": "https://github.com/Dbono-dev/yaml-action#readme"
+  "homepage": "https://github.com/Dbono-dev/yaml-action#readme",
+  "devDependencies": {
+    "yaml": "^2.1.3"
+  },
+  "dependencies": {
+    "@zeit/ncc": "^0.22.3"
+  }
 }
