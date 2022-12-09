@@ -9,4 +9,4 @@ author: 'Dylan Bono'
 
 runs:
   using: 'node12',
-  main: 'dist/index.js'
+  main: 'src/action.js'
