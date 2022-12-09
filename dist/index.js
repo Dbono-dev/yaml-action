@@ -2818,6 +2818,7 @@ exports.default = _default;
 
 const core = __webpack_require__(470);
 const fs = __webpack_require__(747);
+const path = __webpack_require__(622);
 // const yaml = require('yaml');
 
 async function run() {
