@@ -16,8 +16,6 @@ async function run() {
 
     const finalDoc = yaml.stringify(pubspec);
 
-    console.log(finalDoc);
-
     fs.writeFileSync(filePath, finalDoc);
 }
 
