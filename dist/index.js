@@ -11122,12 +11122,14 @@ const yaml = __nccwpck_require__(4083);
 
 async function run() {
     console.log("Hello World");
-    const version = core.getInput('version');
+    // const version = core.getInput('version');
+    const version = "2.0.0";
     console.log(version);
 
-    const filePath = path.join(process.env.GITHUB_WORKSPACE, "/pubspec.yaml");
-    console.log(filePath);
+    // const filePath = path.join(process.env.GITHUB_WORKSPACE, "/pubspec.yaml");
+    // console.log(filePath);
 
+    const filePath = "pubspec.yaml";
     const file = fs.readFileSync(filePath, 'utf8');
     console.log(file);
 
