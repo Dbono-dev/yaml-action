@@ -1,11 +1,10 @@
-name: Hello World
+name: YAMl Action
 
 on: 
   workflow_dispatch:
 
-
 jobs: 
-  hello-world:
+  yaml-action:
     runs-on: ubuntu-latest
     
     steps: 
