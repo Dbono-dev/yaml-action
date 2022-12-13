@@ -10,6 +10,7 @@ async function run() {
 
     const filePath = path.join(process.env.GITHUB_WORKSPACE, "/pubspec.yaml");
     console.log(filePath);
+
     const file = fs.readFileSync(filePath, 'utf8');
     console.log(file);
 
