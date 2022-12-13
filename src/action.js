@@ -11,6 +11,7 @@ async function run() {
     const filePath = path.join(process.env.GITHUB_WORKSPACE, "/pubspec.yaml");
     console.log(filePath);
     const file = fs.readFileSync(filePath, 'utf8');
+    console.log(file);
 
     // console.log(file);
 
@@ -20,7 +21,7 @@ async function run() {
 
     // const finalDoc = yaml.stringify(pubspec);
 
-    fs.writeFileSync(filePath, finalDoc);
+    // fs.writeFileSync(filePath, finalDoc);
 }
 
 run();
