@@ -1,7 +1,7 @@
 const core = require('@actions/core');
 const fs = require('fs');
 const path = require('path');
-const yaml = require('yaml');
+// const yaml = require('yaml');
 
 async function run() {
     console.log("Hello World");
@@ -12,13 +12,13 @@ async function run() {
     console.log(filePath);
     const file = fs.readFileSync(filePath, 'utf8');
 
-    console.log(file);
+    // console.log(file);
 
-    const pubspec = yaml.parseDocument(file, { schema: "core" });
+    // const pubspec = yaml.parseDocument(file, { schema: "core" });
 
-    pubspec.set('version', version);
+    // pubspec.set('version', version);
 
-    const finalDoc = yaml.stringify(pubspec);
+    // const finalDoc = yaml.stringify(pubspec);
 
     fs.writeFileSync(filePath, finalDoc);
 }
