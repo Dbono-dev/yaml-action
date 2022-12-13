@@ -17,6 +17,8 @@ async function run() {
     const finalDoc = yaml.stringify(pubspec);
 
     fs.writeFileSync(filePath, finalDoc);
+
+    console.log('Version Number Updated to: ' + version);
 }
 
 run();
