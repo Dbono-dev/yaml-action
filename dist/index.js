@@ -11121,6 +11121,7 @@ const path = __nccwpck_require__(1017);
 const yaml = __nccwpck_require__(4083);
 
 async function run() {
+    console.log("Hello World");
     const version = core.getInput('version');
     console.log(version);
 

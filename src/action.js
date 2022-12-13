@@ -4,6 +4,7 @@ const path = require('path');
 const yaml = require('yaml');
 
 async function run() {
+    console.log("Hello World");
     const version = core.getInput('version');
     console.log(version);
 
