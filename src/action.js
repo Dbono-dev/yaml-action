@@ -5,9 +5,10 @@ const yaml = require('yaml');
 
 async function run() {
     const version = core.getInput('version');
+    console.log(version);
 
     const filePath = path.join(process.env.GITHUB_WORKSPACE, "pubspec.yaml");
-    console.log(filePath)
+    console.log(filePath);
     const file = fs.readFileSync(filePath, 'utf8');
 
     console.log(file);
