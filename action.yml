@@ -1,5 +1,5 @@
-name: 'YAML Action'
-description: 'Allows YAML Files to be edited'
+name: 'Flutter YAML Version'
+description: 'Updates Flutter pubspec.yaml version'
 author: 'Dylan Bono'
 
 inputs:
