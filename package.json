@@ -20,11 +20,9 @@
   "homepage": "https://github.com/Dbono-dev/yaml-action#readme",
   "devDependencies": {
     "@actions/core": "^1.10.0",
+    "@vercel/ncc": "^0.36.0",
     "fs": "^0.0.1-security",
     "path": "^0.12.7",
     "yaml": "^2.1.3"
-  },
-  "dependencies": {
-    "@zeit/ncc": "^0.22.3"
   }
 }
