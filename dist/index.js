@@ -11121,10 +11121,8 @@ const path = __nccwpck_require__(1017);
 const yaml = __nccwpck_require__(4083);
 
 async function run() {
-    const changes = core.getInput('changes');
+    const allChanges = core.getInput('changes');
     const commentOutDevDependencies = core.getInput('commentOutDevDependencies');
-
-    const allChanges = new Map(changes);
 
     const filePath = path.join(process.env.GITHUB_WORKSPACE, "/pubspec.yaml");
 
@@ -11149,13 +11147,11 @@ async function run() {
 
     const pubspec = yaml.parseDocument(file, { schema: "core" });
 
-    allChanges.forEach(
-        function (value, key) {
-            const path = key.split('.');
-            pubspec.setIn(path, value);
-            console.log(key + ' set to: ' + value);
-        },
-    );
+    for (const key in allChanges) {
+        const path = key.split('.');
+        pubspec.setIn(path, allChanges[key]);
+        console.log(key + ' set to: ' + allChanges[key]);
+    }
 
     const finalDoc = yaml.stringify(pubspec);
 
