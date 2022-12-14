@@ -3,14 +3,26 @@ description: Testing Pubsepc
 
 publish_to: 'none'
 
-version: 2.2.2
+version: 2.2.0
 
 environment:
   sdk: ">=2.16.1 <3.0.0"
 
+#dependency_overrides:
+#  wft_lib_theme:
+#    ##    path: "" # Add you local package path if you want to test locally
+#    git:
+#      ref: develop
+#      url: "https://github.com/one-thd/wft_lib_theme.git"
+#  wft_lib_tool_translations:
+#    ##    path: "" # Add you local package path if you want to test locally
+#    git:
+#      ref: develop
+#      url: "https://github.com/one-thd/wft_lib_tool_translations.git"
+#
 dependencies:
   flutter:
-    sdk: flutter
+    sdk: v2.2.0
 
   cupertino_icons: ^1.0.2
   flutter_hooks: ^0.18.5+1

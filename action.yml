@@ -1,10 +1,13 @@
 name: 'Flutter YAML Version'
-description: 'Updates Flutter pubspec.yaml version'
+description: 'Updates Flutter pubspec.yaml'
 author: 'Dylan Bono'
 
 inputs:
-  version:
-    description: 'Version Number'
+  changes:
+    description: 'Changes to YAML File in correct format'
+    required: true
+  commentOutDevDependencies:
+    description: 'Determines if Dev Dependencies need to be commented out, enter true or false'
     required: true
 
 runs:
