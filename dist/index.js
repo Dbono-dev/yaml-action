@@ -11121,7 +11121,7 @@ const path = __nccwpck_require__(1017);
 const yaml = __nccwpck_require__(4083);
 
 async function run() {
-    const allChanges = core.getMultilineInput('changes');
+    const allChanges = core.getInput('changes');
     const commentOutDevDependencies = core.getInput('commentOutDevDependencies');
 
     const filePath = path.join(process.env.GITHUB_WORKSPACE, "/pubspec.yaml");

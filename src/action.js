@@ -4,7 +4,7 @@ const path = require('path');
 const yaml = require('yaml');
 
 async function run() {
-    const allChanges = core.getMultilineInput('changes');
+    const allChanges = core.getInput('changes');
     const commentOutDevDependencies = core.getInput('commentOutDevDependencies');
 
     const filePath = path.join(process.env.GITHUB_WORKSPACE, "/pubspec.yaml");
