@@ -30,11 +30,7 @@ async function run() {
 
     const pubspec = yaml.parseDocument(file, { schema: "core" });
 
-    console.log(allChanges);
-
     for (const key in allChanges) {
-        console.log(key);
-
         const path = key.split('.');
         pubspec.setIn(path, allChanges[key]);
         console.log(key + ' set to: ' + allChanges[key]);
