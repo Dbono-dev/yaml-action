@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps: 
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v7
     - uses: ./
       with:
         changes: |
@@ -17,6 +17,6 @@ jobs:
             "dependencies.flutter.sdk": "2.0.1"
           }
         commentOutDevDependencies: 'true'
-    - uses: EndBug/add-and-commit@v9
+    - uses: EndBug/add-and-commit@v11
       with:
         message: 'Testing Version Increase'
